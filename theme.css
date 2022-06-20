@@ -1,0 +1,500 @@
+:root {
+  --b3-font-color1: #d83931;
+  --b3-font-color2: #de7802;
+  --b3-font-color3: #856404;
+  --b3-font-color4: #2ea121;
+  --b3-font-color5: #35737d;
+  --b3-font-color6: #245bdb;
+  --b3-font-color7: #6425d0;
+  --b3-font-color8: #b3b3b3;
+  --b3-font-color9: #951111;
+  --b3-font-color10: #7c2a2a;
+  --b3-font-color11: #ba8c1f;
+  --b3-font-color12: #1edd67;
+  --b3-font-color13: #6dbc27;
+  --b3-font-background1: #fbbfbc;
+  --b3-font-background2: #fed4a4;
+  --b3-font-background3: #ffe9a1;
+  --b3-font-background4: #b7edb1;
+  --b3-font-background5: #d1ecf1;
+  --b3-font-background6: #bacefd;
+  --b3-font-background7: #cdb2fa;
+  --b3-font-background8: #e1e1e1;
+  --b3-font-background9: #fc2e1b;
+  --b3-font-background10: #f6df5b;
+  --b3-font-background11: #2d48f8;
+  --b3-font-background12: #2a9f65;
+  --b3-font-background13: #56dde2;
+  --b3-card-error-color: #5f6368;
+  --b3-card-error-background: #fce7e9;
+  --b3-card-warning-color: #5f6368;
+  --b3-card-warning-background: #fee6ac;
+  --b3-card-info-color: #5f6368;
+  --b3-card-info-background: #cfddfe;
+  --b3-card-success-color: #5f6368;
+  --b3-card-success-background: #ccf2c8;
+  --b3-font-family: "Times New Roman","仓耳今楷03";
+}
+.protyle-breadcrumb {
+  font-family: "Times New Roman", "仓耳今楷03";
+  font-size: 15.5px;
+}
+.block__icons {
+  font-family: "华文行楷";
+  font-size: 20px;
+}
+.b3-list-item,
+.b3-list--empty,
+.b3-tab-container,
+.b3-button--cancel,
+.fn__ellipsis {
+  font-family: "Times New Roman", "仓耳今楷03";
+  font-size: 15.5px;
+  vertical-align: middle;
+}
+.b3-form__icon--small .b3-form__icon-icon {
+  top: 5px;
+  width: 15px;
+}
+body.body--win32 .toolbar {
+  height: 28px;
+  line-height: 28px;
+  font-family: "Times New Roman", "仓耳今楷03";
+  font-size: 15.5px;
+}
+.b3-menu__accelerator,
+.b3-button--outline,
+.b3-button {
+  font-family: "JetBrains Mono";
+}
+.config-keymap li .b3-text-field,
+.config-keymap li .pcr-app .pcr-interaction .pcr-result,
+.pcr-app .pcr-interaction .config-keymap li .pcr-result {
+  font-family: "JetBrains Mono";
+  font-size: 14px;
+}
+.toolbar__item {
+  padding: 4px;
+  margin: 6px;
+  margin-left: 5px;
+}
+.toolbar__item--close {
+  margin: 0;
+  padding: 10px 9px;
+  border-radius: 0px;
+}
+.toolbar__item--win {
+  margin: 0;
+  padding: 8px 8px;
+  border-radius: 0px;
+}
+.b3-menu,
+.protyle-util {
+  padding: 6px 6px;
+  font-size: 16px;
+}
+.b3-menu__item {
+  border-radius: 5px;
+  margin: 2px 0px;
+  font-family: "Times New Roman", "仓耳今楷03";
+}
+.b3-menu__item--show .b3-menu__submenu {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 6px 6px;
+}
+#activationCode {
+  line-height: 19px;
+  padding: 4px 6px;
+  background-color: cornflowerblue;
+  color: #000;
+  bottom: 2px;
+  border-radius: 3px;
+  right: 1px !important;
+}
+#refresh > svg {
+  margin: 0;
+}
+.layout-tab-bar .item {
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  font-family: "Times New Roman", "仓耳今楷03";
+}
+.layout__wnd--active .layout-tab-bar .item--focus {
+  box-shadow: none !important;
+  font-family: "Times New Roman", "仓耳今楷03";
+}
+.protyle-breadcrumb__item:hover,
+.protyle-breadcrumb__item--active {
+  background-color: transparent;
+  font-family: "Times New Roman", "仓耳今楷03";
+}
+/*更改界面滚动条*/
+body:not(.native-scrollbars) ::-webkit-scrollbar {
+  background-color: transparent;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+.protyle-content {
+  background-image: linear-gradient(90deg, rgba(60, 10, 30, 0.06) 2%, transparent 0px), linear-gradient(1turn, rgba(60, 10, 30, 0.06) 2%, transparent 0px);
+  background-size: 30px 30px;
+  background-position: 50% center;
+  text-align: justify;
+}
+.protyle-title__input {
+  background-color: transparent;
+}
+/* -------------------------------表格start------------------------------------- */
+/* 表格100%宽度 */
+.protyle-wysiwyg table,
+.b3-typography table {
+  display: table;
+  width: 100%;
+}
+/* 表头和表行格式一致 */
+.protyle-wysiwyg [data-node-id][custom-f~=biaotou] table th {
+  text-align: center !important;
+}
+/* 设置表头区域顶部边框，使表格更明显 */
+table thead {
+  border-top: 0.15em solid #0c83f2 !important;
+}
+/*设置表格表头样式，颜色，背景，加粗，居中对齐*/
+table th {
+  font-weight: normal !important;
+}
+/* 设置表格内部边框 */
+th,
+td {
+  min-width: 1em;
+  border: 0.1em solid #d3d3d3 !important;
+  border-collapse: collapse;
+  color: inherit;
+  background-color: white;
+}
+/* -------------------------------表格end------------------------------------- */
+.protyle-wysiwyg [data-node-id].hr > div {
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+  height: 2px;
+}
+.protyle-wysiwyg [data-node-id].render-node[custom-size~=small] .katex {
+  font-size: 100%;
+}
+.protyle-wysiwyg [data-node-id].render-node[custom-size~=smaller] .katex {
+  font-size: 80%;
+}
+.katex {
+  font-weight: 600 !important;
+  font-family: "KaTeX_Math", "楷体" !important;
+}
+.b3-dialog__container .b3-dialog__close {
+  color: gray;
+  font-size: 50%;
+  cursor: pointer;
+  background: white;
+  border-radius: 50px;
+  padding: 4px;
+  margin-left: 22px;
+  height: 13px;
+  width: 13px;
+  transition: all 0.1s;
+  transform: scale(1.1);
+}
+.b3-dialog__container .b3-dialog__close:hover {
+  color: #0c83f2;
+  background-color: #f0f8ff;
+  transform: rotate(180deg);
+}
+/* -------------------------代码块样式------------------------------------ */
+.code-block {
+  margin: 4px !important;
+  border-radius: 4px !important;
+  background-color: #fafafa !important;
+}
+/* 代码块主体部分设置 */
+.b3-typography div.hljs,
+.protyle-wysiwyg div.hljs {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+  padding-left: 16px;
+  font-family: "JetBrains Mono";
+  background-size: 20px 20px;
+  background-image: none !important;
+  background: transparent;
+}
+/* 代码块上方部分设置 */
+.protyle-wysiwyg .code-block,
+.b3-typography .code-block {
+  position: relative;
+  display: block;
+  border-radius: 4px;
+  padding-top: 32px !important;
+  box-shadow: 0px 0px 2px 0px #041b1538;
+  border-bottom: 2px solid #cfcece;
+  border-top: 3px solid #0c83f2;
+}
+/* 设置顶部三个mac按钮样式 */
+.code-block::after {
+  content: ' ';
+  position: absolute;
+  background: #fa625c;
+  box-shadow: 23px 0 #fdbc40, 45px 0 #35cd4b;
+  border-radius: 50%;
+  top: 10px;
+  left: 15px;
+  height: 12px;
+  width: 12px;
+  z-index: 1;
+}
+/*  ——————————————代码块行数————————————————*/
+.protyle-linenumber__rows {
+  margin-top: 32px !important;
+  padding: 4px;
+  background-color: #fafafa !important;
+  margin-bottom: 0px;
+  font-family: "JetBrains Mono";
+}
+/* 代码块行数的数字  */
+.protyle-linenumber__rows span::before {
+  color: rgba(128, 128, 128, 0.5);
+}
+/* 代码块的语言代码 */
+.b3-typography .code-block .protyle-action .protyle-action__language,
+.protyle-wysiwyg .code-block .protyle-action .protyle-action__language {
+  margin-top: 0px;
+  position: absolute;
+  right: 4em;
+  border-radius: 4px;
+  opacity: 1 !important;
+  font-family: "JetBrains Mono";
+}
+.b3-typography .code-block .protyle-action .protyle-action__language::after,
+.protyle-wysiwyg .code-block .protyle-action .protyle-action__language::after {
+  content: "›";
+  font-family: "JetBrains Mono";
+  color: #80808080;
+  opacity: 1;
+}
+/* 复制和设置按钮样式 */
+.b3-typography .code-block .protyle-action .protyle-icon,
+.b3-typography .code-block .protyle-action .protyle-action__language,
+.protyle-wysiwyg .code-block .protyle-action .protyle-icon,
+.protyle-wysiwyg .code-block .protyle-action .protyle-action__language {
+  opacity: 1 !important;
+  background-color: transparent !important;
+}
+.b3-typography .code-block .protyle-action .protyle-icon svg,
+.b3-typography .code-block .protyle-action .protyle-action__language svg,
+.protyle-wysiwyg .code-block .protyle-action .protyle-icon svg,
+.protyle-wysiwyg .code-block .protyle-action .protyle-action__language svg {
+  color: gray;
+}
+/* ————————————————————————————————集市里边代码块的主题—————————————————————————————— */
+code.hljs {
+  background-color: #fafafa !important;
+  border-top: 3px solid #0c83f2;
+  border-bottom: 2px solid #cfcece;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+.protyle-wysiwyg .code-block,
+.b3-typography .code-block {
+  padding-bottom: 15px;
+}
+.b3-list-item .counter {
+  display: none;
+}
+.b3-menu__item--show .b3-menu__submenu--row .b3-menu__item {
+  font-size: 20px;
+}
+.b3-menu__item--show .b3-menu__submenu--row .b3-menu__item.b3-menu__item--current {
+  background-color: #f8f9fa;
+}
+.b3-menu__item--show .b3-menu__submenu--row .b3-menu__label span {
+  padding: 4px;
+  border-radius: 4px;
+}
+.protyle-font {
+  font-size: 15px;
+  font-family: "Times New Roman", "仓耳今楷03";
+  padding: 7px 13px !important;
+}
+.b3-color__square {
+  padding: 11px;
+  margin: 4px;
+  border-radius: 4px;
+}
+.protyle-font .b3-color__square::after {
+  content: "A";
+  color: initial;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "微软雅黑";
+}
+.b3-typography strong,
+.protyle-wysiwyg strong,
+.b3-typography em,
+.protyle-wysiwyg em {
+  padding: 2px 0px;
+  border-radius: 3px;
+}
+strong[style*="background-color: var(--b3-font-background"] {
+  padding: 2px 3px;
+}
+.p[data-node-id][data-type="NodeParagraph"][style*="background-color: var(--b3-card-"],
+.list[style*="background-color: var(--b3-card-"] {
+  padding: 19px 19px 19px 19px !important;
+  line-height: 2.3;
+  border-radius: 4px;
+}
+.p[data-node-id][data-type="NodeParagraph"][style*="background-color: var(--b3-card-"]::before,
+.list[style*="background-color: var(--b3-card-"]::before {
+  content: url(icons/pin.svg);
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -10px;
+  left: 7px;
+  z-index: 2;
+  transform: rotate(354deg);
+}
+.sb[data-node-id][data-type="NodeSuperBlock"][style*="background-color: var(--b3-card-"],
+.sb[style*="background-color: var(--b3-card-"] {
+  padding: 19px 19px 19px 19px !important;
+  line-height: 2.3;
+  border-radius: 4px;
+}
+.sb[data-node-id][data-type="NodeSuperBlock"][style*="background-color: var(--b3-card-"]::before,
+.sb[style*="background-color: var(--b3-card-"]::before {
+  content: url(icons/pin.svg);
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -10px;
+  left: 7px;
+  z-index: 2;
+  transform: rotate(354deg);
+}
+.protyle-wysiwyg [data-node-id].sb[data-sb-layout=col] > div,
+.protyle-wysiwyg [data-node-id].sb[data-sb-layout=col] .sb {
+  border: 3px dashed #0c83f2;
+  margin: 3px 3px;
+  border-radius: 4px;
+}
+.protyle-attr {
+  display: none;
+}
+.p[custom-f~=t] div,
+.bq[custom-f~=t] div {
+  text-indent: 2em;
+}
+.b3-typography blockquote,
+.b3-typography .bq,
+.protyle-wysiwyg blockquote,
+.protyle-wysiwyg .bq {
+  padding: 0.5em;
+  color: #000;
+  border: 3px dashed #0c83f2;
+  background-color: #FFFFFF;
+  margin: 16px 0;
+  border-radius: 2px;
+  position: relative;
+  padding-left: 1.5em;
+}
+.b3-typography blockquote::before,
+.b3-typography .bq::before,
+.protyle-wysiwyg blockquote::before,
+.protyle-wysiwyg .bq::before {
+  content: url(icons/xingzuo.svg);
+  position: absolute;
+  top: -22px;
+  left: -15px;
+  transform: rotate(329deg);
+}
+.li[data-type="NodeListItem"].protyle-task--done {
+  text-decoration: line-through;
+}
+button.fn__block {
+  border-radius: 4px;
+  width: 50%;
+  display: inline-block;
+  margin: 2px 0px;
+}
+.b3-typography img,
+.protyle-wysiwyg img {
+  border: 3px dashed #0c83f2;
+  border-radius: 4px;
+}
+.protyle-action.protyle-icons {
+  border: 3px;
+  top: 15px;
+  right: 15px;
+}
+strong[style="background-color: var(--b3-font-background13);"] {
+  color: transparent;
+  background-color: transparent !important;
+  border-bottom: 2px solid #000;
+  border-radius: 0;
+}
+strong[style="background-color: var(--b3-font-background13);"]:hover {
+  color: #000;
+}
+button.b3-color__square[data-type="backgroundColor"][style="background-color:var(--b3-font-background13)"] {
+  background-color: #fff !important;
+}
+button.b3-color__square[data-type="backgroundColor"][style="background-color:var(--b3-font-background13)"]::after {
+  border-bottom: 2px solid #000;
+  border-radius: 0;
+}
+button.b3-color__square[data-type="color"][style*="background-color:var(--b3-font"] {
+  background-color: transparent !important;
+}
+button.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color1)"]::after {
+  color: var(--b3-font-color1);
+}
+button.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color2)"]::after {
+  color: var(--b3-font-color2);
+}
+button.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color3)"]::after {
+  color: var(--b3-font-color3);
+}
+button.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color4)"]::after {
+  color: var(--b3-font-color4);
+}
+button.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color5)"]::after {
+  color: var(--b3-font-color5);
+}
+button.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color6)"]::after {
+  color: var(--b3-font-color6);
+}
+button.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color7)"]::after {
+  color: var(--b3-font-color7);
+}
+button.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color8)"]::after {
+  color: var(--b3-font-color8);
+}
+button.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color9)"]::after {
+  color: var(--b3-font-color9);
+}
+button.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color10)"]::after {
+  color: var(--b3-font-color10);
+}
+button.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color11)"]::after {
+  color: var(--b3-font-color11);
+}
+button.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color12)"]::after {
+  color: var(--b3-font-color12);
+}
+button.b3-color__square[data-type="color"][style="background-color:var(--b3-font-color13)"]::after {
+  color: var(--b3-font-color13);
+}
+.b3-menu__item--show .b3-menu__submenu--row .b3-menu__label span {
+  font-family: "微软雅黑";
+}
+code {
+  color: #c7254e;
+  background-color: #f5f6f8;
+}

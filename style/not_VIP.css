@@ -1,0 +1,19 @@
+/*去除收集箱*/
+span[data-type="inbox"]{
+	display: none;
+}
+
+/*去除登录模块*/
+li[data-name="account"]{
+	display: none;
+}
+
+/*去除云端模块*/
+li[data-name="repos"]{
+	display: none;
+}
+
+/* 去除VIP图标 */
+div#toolbarVIP{
+	display: none;
+}
