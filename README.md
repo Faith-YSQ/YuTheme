@@ -27,6 +27,8 @@
 
 注：`JetBrains Mono`有很多字体系列，均适合代码块，且字体名称均为`JetBrains Mono`，可以自行选择。原生效果为`JetBrains Mono Italic`
 
+如果你想更改此主题，请使用less文件进行修改，然后编译成css。
+
 ## 代码块
 ![image-20220620142419-b1f9aj6](https://user-images.githubusercontent.com/66512309/174541712-20dd46ee-40e7-4409-9744-0a527d33955a.png)
 
