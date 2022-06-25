@@ -1,8 +1,29 @@
 // @import url(style/not_VIP.css);
 
+@font-face {
+    font-family: 仓耳今楷03;
+    src: url("fonts/仓耳今楷03-W04.ttf");
+}
+
+@font-face {
+    font-family: Futura;
+    src: url("fonts/Futura-Book-2.ttf");
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url("fonts/JetBrainsMono-Italic.ttf");
+}
+
+@font-face {
+    font-family: optima;
+    src: url("fonts/optima-regular-1.ttf");
+}
+
+
 // 字体
 @--font-family-first:"华文行楷";
-@--font-family-second:"Times New Roman","仓耳今楷03";
+@--font-family-second: "Times New Roman","仓耳今楷03";
 @--font-family-code:"JetBrains Mono";
 @--font-family-latex: "KaTeX_Math","楷体";
 
@@ -59,10 +80,6 @@
 
     --b3-font-family:"Times New Roman","仓耳今楷03";
 }
-
-// 引入字体
-
-
 
 .protyle-breadcrumb{
 	font-family: @--font-family-second;
@@ -502,6 +519,13 @@ strong[style*="background-color: var(--b3-font-background"]{
     display: none;
 }
 
+// 图片合成超级块更改边框
+.protyle-wysiwyg [data-node-id].sb[data-sb-layout=col] img{
+    border: 3px solid #e9e9e9;
+    // box-shadow: #e9e9e9;
+    border-radius: 4px;
+}
+
 // 段落和引言自定义属性，首行缩进
 .p[custom-f~=t] div,.bq[custom-f~=t] div{
     text-indent: 2em;
@@ -537,6 +561,10 @@ strong[style*="background-color: var(--b3-font-background"]{
 
 
 // 斜杠菜单
+.b3-menu.b3-list.b3-list--background.hint--menu{
+    padding: 10px;
+}
+
 button.fn__block{
     border-radius: 4px;
     width: 50%;
@@ -652,4 +680,93 @@ button.b3-color__square[data-type="color"][style="background-color:var(--b3-font
 code{
     color: #c7254e;
     background-color: #f5f6f8;
+    font-family: @--font-family-code !important;
+}
+
+// 大纲中行内代码修改为和大纲项目样式一致
+.b3-list-item code{
+    color: inherit;
+    background-color: inherit;
+}
+
+
+// 修改文档树图标大小
+.b3-list-item__icon{
+    height: 25px;
+    line-height: 25px;
+}
+
+.b3-list-item__icon svg, .b3-list-item__icon img{
+    width: 20px;
+    height: 20px;
+}
+
+// 划词引用块面板新建文档
+button[data-value^="((newFile"]{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    // margin-top: 4px !important;
+}
+
+// 增大输入框上下间隙
+// .b3-text-field, .pcr-app .pcr-interaction .pcr-result{
+//     margin-top: 5px !important;
+//     margin-bottom: 5px !important;
+// }
+
+// 嵌入块
+.protyle-wysiwyg [data-node-id].render-node[data-type=NodeBlockQueryEmbed]{
+    background-color: #fff;
+    border: #0c83f2 2px solid;
+    padding: 20px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.protyle-wysiwyg [data-node-id].render-node[data-type=NodeBlockQueryEmbed]::before{
+    content: url(icons/link.svg);
+    position: absolute;
+    // width: 30%;
+    left: -15px;
+    top: -17px;
+}
+
+// 引用块
+.protyle-wysiwyg [data-node-id] span[data-type=block-ref], .protyle-wysiwyg [data-node-id] span[data-type=file-annotation-ref]{
+    color: blue;
+    opacity: 0.8;
+    display: inline-block;
+    padding: 5px;
+    padding-left: 30px;
+    border-radius: 4px;
+    position: relative
+}
+
+.protyle-wysiwyg [data-node-id] span[data-type=block-ref]::before, 
+.protyle-wysiwyg [data-node-id] span[data-type=file-annotation-ref]::before{
+    content: "🍁 ";
+    font-size: 20px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+}
+
+.protyle-wysiwyg[contenteditable=true] span[data-type=block-ref]:hover, .protyle-wysiwyg[contenteditable=true] span[data-type=file-annotation-ref]:hover{
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    color: #245bdb;
+}
+
+// 各种云盘链接
+.protyle-wysiwyg [data-node-id] span[data-type=a]{
+    position: relative;
+    padding-left: 30px; 
+    text-decoration: none !important;
+    border: none !important;
+}
+
+.protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="lanzoum.com"]::before{
+    content: url(icons/lanzou.ico);
+    position: absolute;
+    top: -1.5px;
+    left: 6px;
 }
