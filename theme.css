@@ -587,3 +587,39 @@ button[data-value^="((newFile"] {
   top: -1.5px;
   left: 6px;
 }
+.protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="aliyundrive"]::before {
+  content: url(icons/aliyun.ico);
+  position: absolute;
+  top: -1.5px;
+  left: 6px;
+}
+.protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="github"]::before {
+  content: url(icons/github.svg);
+  position: absolute;
+  top: -1.5px;
+  left: 6px;
+}
+.protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="csdn"]::before {
+  content: url(icons/csdn.svg);
+  position: absolute;
+  top: -1.5px;
+  left: 6px;
+}
+.protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="zhihu"]::before {
+  content: url(icons/zhihu.svg);
+  position: absolute;
+  top: -1.5px;
+  left: 6px;
+}
+.protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="juejin"]::before {
+  content: url(icons/juejin.png);
+  position: absolute;
+  top: -1.5px;
+  left: 6px;
+}
+.protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="jianshu"]::before {
+  content: url(icons/jianshu.png);
+  position: absolute;
+  top: -1.5px;
+  left: 6px;
+}
