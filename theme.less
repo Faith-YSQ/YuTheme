@@ -1,29 +1,24 @@
 // @import url(style/not_VIP.css);
 
-@font-face {
-    font-family: 仓耳今楷03;
-    src: url("fonts/仓耳今楷03-W04.ttf");
-}
+// @font-face {
+//     font-family: 仓耳今楷03;
+//     src: url("fonts/仓耳今楷03-W04.ttf");
+// }
 
-@font-face {
-    font-family: Futura;
-    src: url("fonts/Futura-Book-2.ttf");
-}
+// @font-face {
+//     font-family: 舒窈英文衡水体;
+//     src: url("fonts/舒窈英文衡水体.ttf");
+// }
 
-@font-face {
-    font-family: 'JetBrains Mono';
-    src: url("fonts/JetBrainsMono-Italic.ttf");
-}
-
-@font-face {
-    font-family: optima;
-    src: url("fonts/optima-regular-1.ttf");
-}
+// @font-face {
+//     font-family: 'JetBrains Mono';
+//     src: url("fonts/JetBrainsMono-Medium.ttf");
+// }
 
 
 // 字体
 @--font-family-first:"华文行楷";
-@--font-family-second: "Times New Roman","仓耳今楷03";
+@--font-family-second: "舒窈英文衡水体","Times New Roman","仓耳今楷03";
 @--font-family-code:"JetBrains Mono";
 @--font-family-latex: "KaTeX_Math","楷体";
 
@@ -78,7 +73,8 @@
     --b3-card-success-color:#5f6368;
     --b3-card-success-background:#ccf2c8;
 
-    --b3-font-family:"Times New Roman","仓耳今楷03";
+    --b3-font-family:"舒窈英文衡水体","Courier","Times New Roman","仓耳今楷03";
+    // --b3-font-family:"Segoe Print","Courier","Times New Roman","仓耳今楷03";
 }
 
 .protyle-breadcrumb{
@@ -102,6 +98,10 @@
 	top:5px;
 	width:15px;
 }
+
+// .search__label .b3-form__icon-input{
+//     border-radius: 50%;
+// }
 
 body.body--win32 .toolbar{
 	height: 28px;
@@ -137,6 +137,8 @@ body.body--win32 .toolbar{
 	padding: 8px 8px;
 	border-radius: 0px;
 }
+
+
 
 // 各种选项菜单
 .b3-menu, .protyle-util{
@@ -195,11 +197,12 @@ body.body--win32 .toolbar{
 /*更改界面滚动条*/
 body:not(.native-scrollbars) ::-webkit-scrollbar{
 	background-color: transparent;
+    // background-color: #F5F5F5;
 	width: 5px;
 }
 
 ::-webkit-scrollbar-thumb{
-	background-color: rgba(0, 0, 0, .2) !important;
+	background-color: #294E80 !important;
 }
 
 // 编辑界面
@@ -471,6 +474,7 @@ strong[style*="background-color: var(--b3-font-background"]{
     // text-indent: 2em;
     line-height: 2.3;
     border-radius: 4px;
+    color: #000 !important;
 }
 
 .p[data-node-id][data-type="NodeParagraph"][style*="background-color: var(--b3-card-"]::before, .list[style*="background-color: var(--b3-card-"]::before {
@@ -757,59 +761,104 @@ button[data-value^="((newFile"]{
 }
 
 // 各种云盘链接
-.protyle-wysiwyg [data-node-id] span[data-type=a]{
-    position: relative;
-    padding-left: 30px; 
-    text-decoration: none !important;
-    border: none !important;
-}
+// .protyle-wysiwyg [data-node-id] span[data-type=a]{
+//     position: relative;
+//     padding-left: 30px; 
+//     text-decoration: none !important;
+//     border: none !important;
+// }
 
-.protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="lanzoum.com"]::before{
-    content: url(icons/lanzou.ico);
-    position: absolute;
-    top: -1.5px;
-    left: 6px;
-}
+// .protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="lanzoum.com"]::before{
+//     content: url(icons/lanzou.ico);
+//     position: absolute;
+//     top: -1.5px;
+//     left: 6px;
+// }
 
-.protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="aliyundrive"]::before{
-    content: url(icons/aliyun.ico);
-    position: absolute;
-    top: -1.5px;
-    left: 6px;
-}
+// .protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="aliyundrive"]::before{
+//     content: url(icons/aliyun.ico);
+//     position: absolute;
+//     top: -1.5px;
+//     left: 6px;
+// }
 
 
 // 其他类型链接
-.protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="github"]::before{
-    content: url(icons/github.svg);
-    position: absolute;
-    top: -1.5px;
-    left: 6px;
+// .protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="github"]::before{
+//     content: url(icons/github.svg);
+//     position: absolute;
+//     top: -1.5px;
+//     left: 6px;
+// }
+
+// .protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="csdn"]::before{
+//     content: url(icons/csdn.svg);
+//     position: absolute;
+//     top: -1.5px;
+//     left: 6px;
+// }
+
+// .protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="zhihu"]::before{
+//     content: url(icons/zhihu.svg);
+//     position: absolute;
+//     top: -1.5px;
+//     left: 6px;
+// }
+
+// .protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="juejin"]::before{
+//     content: url(icons/juejin.png);
+//     position: absolute;
+//     top: -1.5px;
+//     left: 6px;
+// }
+// .protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="jianshu"]::before{
+//     content: url(icons/jianshu.png);
+//     position: absolute;
+//     top: -1.5px;
+//     left: 6px;
+// }
+
+
+// 调整底部停靠侧边栏按钮
+// #barDock{
+//     margin-left: 3px;
+// }
+
+#status{
+    height: 28px;
+    line-height: 28px;
+    .toolbar__item svg{
+        width: 16px;
+        height: 16px;
+    }
+    div{
+        margin-bottom: 0;
+        margin-top: 1px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
 }
 
-.protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="csdn"]::before{
-    content: url(icons/csdn.svg);
-    position: absolute;
-    top: -1.5px;
-    left: 6px;
+.block__icons .counter{
+    display: none !important;
 }
 
-.protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="zhihu"]::before{
-    content: url(icons/zhihu.svg);
-    position: absolute;
-    top: -1.5px;
-    left: 6px;
+
+// 调整大纲面板上面的页面图标
+span.b3-list-item__graphic{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    img{
+        width: 20px;
+        height: 20px;
+    }
 }
 
-.protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="juejin"]::before{
-    content: url(icons/juejin.png);
-    position: absolute;
-    top: -1.5px;
-    left: 6px;
-}
-.protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="jianshu"]::before{
-    content: url(icons/jianshu.png);
-    position: absolute;
-    top: -1.5px;
-    left: 6px;
+// 代码种类输入框和选项字体
+.b3-menu, .protyle-util{
+    div.b3-list-item,input{
+        font-family: @--font-family-code;
+    }
 }

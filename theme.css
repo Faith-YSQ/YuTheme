@@ -1,19 +1,3 @@
-@font-face {
-  font-family: 仓耳今楷03;
-  src: url("fonts/仓耳今楷03-W04.ttf");
-}
-@font-face {
-  font-family: Futura;
-  src: url("fonts/Futura-Book-2.ttf");
-}
-@font-face {
-  font-family: 'JetBrains Mono';
-  src: url("fonts/JetBrainsMono-Italic.ttf");
-}
-@font-face {
-  font-family: optima;
-  src: url("fonts/optima-regular-1.ttf");
-}
 :root {
   --b3-font-color1: #d83931;
   --b3-font-color2: #de7802;
@@ -49,10 +33,10 @@
   --b3-card-info-background: #cfddfe;
   --b3-card-success-color: #5f6368;
   --b3-card-success-background: #ccf2c8;
-  --b3-font-family: "Times New Roman","仓耳今楷03";
+  --b3-font-family: "舒窈英文衡水体","Courier","Times New Roman","仓耳今楷03";
 }
 .protyle-breadcrumb {
-  font-family: "Times New Roman", "仓耳今楷03";
+  font-family: "舒窈英文衡水体", "Times New Roman", "仓耳今楷03";
   font-size: 15.5px;
 }
 .block__icons {
@@ -64,7 +48,7 @@
 .b3-tab-container,
 .b3-button--cancel,
 .fn__ellipsis {
-  font-family: "Times New Roman", "仓耳今楷03";
+  font-family: "舒窈英文衡水体", "Times New Roman", "仓耳今楷03";
   font-size: 15.5px;
   vertical-align: middle;
 }
@@ -75,7 +59,7 @@
 body.body--win32 .toolbar {
   height: 28px;
   line-height: 28px;
-  font-family: "Times New Roman", "仓耳今楷03";
+  font-family: "舒窈英文衡水体", "Times New Roman", "仓耳今楷03";
   font-size: 15.5px;
 }
 .b3-menu__accelerator,
@@ -112,7 +96,7 @@ body.body--win32 .toolbar {
 .b3-menu__item {
   border-radius: 5px;
   margin: 2px 0px;
-  font-family: "Times New Roman", "仓耳今楷03";
+  font-family: "舒窈英文衡水体", "Times New Roman", "仓耳今楷03";
 }
 .b3-menu__item--show .b3-menu__submenu {
   margin-left: 10px;
@@ -134,16 +118,16 @@ body.body--win32 .toolbar {
 .layout-tab-bar .item {
   box-shadow: none !important;
   border-radius: 0 !important;
-  font-family: "Times New Roman", "仓耳今楷03";
+  font-family: "舒窈英文衡水体", "Times New Roman", "仓耳今楷03";
 }
 .layout__wnd--active .layout-tab-bar .item--focus {
   box-shadow: none !important;
-  font-family: "Times New Roman", "仓耳今楷03";
+  font-family: "舒窈英文衡水体", "Times New Roman", "仓耳今楷03";
 }
 .protyle-breadcrumb__item:hover,
 .protyle-breadcrumb__item--active {
   background-color: transparent;
-  font-family: "Times New Roman", "仓耳今楷03";
+  font-family: "舒窈英文衡水体", "Times New Roman", "仓耳今楷03";
 }
 /*更改界面滚动条*/
 body:not(.native-scrollbars) ::-webkit-scrollbar {
@@ -151,7 +135,7 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
   width: 5px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.2) !important;
+  background-color: #294E80 !important;
 }
 .protyle-content {
   background-image: linear-gradient(90deg, rgba(60, 10, 30, 0.06) 2%, transparent 0px), linear-gradient(1turn, rgba(60, 10, 30, 0.06) 2%, transparent 0px);
@@ -333,7 +317,7 @@ code.hljs {
 }
 .protyle-font {
   font-size: 15px;
-  font-family: "Times New Roman", "仓耳今楷03";
+  font-family: "舒窈英文衡水体", "Times New Roman", "仓耳今楷03";
   padding: 7px 13px !important;
 }
 .b3-color__square {
@@ -363,6 +347,7 @@ strong[style*="background-color: var(--b3-font-background"] {
   padding: 19px 19px 19px 19px !important;
   line-height: 2.3;
   border-radius: 4px;
+  color: #000 !important;
 }
 .p[data-node-id][data-type="NodeParagraph"][style*="background-color: var(--b3-card-"]::before,
 .list[style*="background-color: var(--b3-card-"]::before {
@@ -575,51 +560,36 @@ button[data-value^="((newFile"] {
   background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
   color: #245bdb;
 }
-.protyle-wysiwyg [data-node-id] span[data-type=a] {
-  position: relative;
-  padding-left: 30px;
-  text-decoration: none !important;
-  border: none !important;
+#status {
+  height: 28px;
+  line-height: 28px;
 }
-.protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="lanzoum.com"]::before {
-  content: url(icons/lanzou.ico);
-  position: absolute;
-  top: -1.5px;
-  left: 6px;
+#status .toolbar__item svg {
+  width: 16px;
+  height: 16px;
 }
-.protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="aliyundrive"]::before {
-  content: url(icons/aliyun.ico);
-  position: absolute;
-  top: -1.5px;
-  left: 6px;
+#status div {
+  margin-bottom: 0;
+  margin-top: 1px;
+  margin-left: 3px;
+  margin-right: 3px;
 }
-.protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="github"]::before {
-  content: url(icons/github.svg);
-  position: absolute;
-  top: -1.5px;
-  left: 6px;
+.block__icons .counter {
+  display: none !important;
 }
-.protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="csdn"]::before {
-  content: url(icons/csdn.svg);
-  position: absolute;
-  top: -1.5px;
-  left: 6px;
+span.b3-list-item__graphic {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 16px;
 }
-.protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="zhihu"]::before {
-  content: url(icons/zhihu.svg);
-  position: absolute;
-  top: -1.5px;
-  left: 6px;
+span.b3-list-item__graphic img {
+  width: 20px;
+  height: 20px;
 }
-.protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="juejin"]::before {
-  content: url(icons/juejin.png);
-  position: absolute;
-  top: -1.5px;
-  left: 6px;
-}
-.protyle-wysiwyg [data-node-id] span[data-type=a][data-href*="jianshu"]::before {
-  content: url(icons/jianshu.png);
-  position: absolute;
-  top: -1.5px;
-  left: 6px;
+.b3-menu div.b3-list-item,
+.protyle-util div.b3-list-item,
+.b3-menu input,
+.protyle-util input {
+  font-family: "JetBrains Mono";
 }
